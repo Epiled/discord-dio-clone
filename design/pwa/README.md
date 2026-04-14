@@ -1,6 +1,6 @@
 # 🖼 PWA Images and Icons - Documentation
 
-This guide explains dimensions and orientations to generate screenshot images and icons for the Youtube Clone PWA.
+This guide explains dimensions and orientations to generate screenshot images and icons for the Discord Clone PWA.
 
 ## Technical Requirements
 
