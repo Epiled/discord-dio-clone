@@ -1,69 +1,142 @@
-# React + TypeScript + Vite
+<!-- ![Social Preview](./design/github/social-preview.png) -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center"> 📹 Discord Clone 📺 </h1>
 
-Currently, two official plugins are available:
+![Vercel Deploy](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)
+![GitHub release](https://img.shields.io/github/v/release/Epiled/Discord-dio-clone?style=for-the-badge)
+![GitHub license](https://img.shields.io/github/license/Epiled/Discord-dio-clone?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![GitHub last commit](https://img.shields.io/github/last-commit/Epiled/Discord-dio-clone?style=for-the-badge)
+![Code Size](https://img.shields.io/github/languages/code-size/Epiled/Discord-dio-clone?style=for-the-badge)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Badge](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=333333)
+![Typescript](https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node\.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📑 Table of Contents
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- [📑 Table of Contents](#-table-of-contents)
+- [📖 Overview](#-overview)
+- [🛠️ Technologies](#-technologies)
+- [⚡ Performance & PWA](#-performance--pwa)
+- [🚀 Demo](#-demo)
+- [📦 Install and Use](#-install-and-use)
+- [📂 File Structure](#-file-structure)
+- [🎨 Reference & Inspiration](#-reference--inspiration)
+- [👨‍💻 Author and Contact](#-author-and-contact)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📖 Overview
+
+Discord website clone
+
+## 🛠 Technologies
+
+The following technologies were used to build this project:
+
+- [React](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [Typescript](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Node.js](https://nodejs.org/pt-br)
+
+* **Type Aware:** Strict use of semantic HTML5 elements and ARIA attributes for accessibility.
+
+## ⚡ Performance & PWA
+
+<!-- ![Lighthouse Performance](./design/github/lighthouse-report-dark.png) -->
+**Coming soon**
+
+## 🚀 Demo
+
+<!-- Access the live application below to interact with the interface and run your own performance tests -->
+
+<!-- Discord Clone: [https://discord-dio-clone-pearl.vercel.app/](https://discord-dio-clone-pearl.vercel.app/) -->
+
+<!-- #### Desktop
+[desktop.webm](https://github.com/user-attachments/assets/09fd8433-29a6-4de3-9f4c-fb8df3549af4)
+
+#### Mobile
+[mobile.webm](https://github.com/user-attachments/assets/1ae8735a-1ace-41ed-9c71-97e8801f367e) -->
+
+**Coming soon**
+
+## 📦 Install and Use
+
+<!-- **Prerequisites:** Node.js (v22.x) or higher installed. -->
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Epiled/discord-dio-clone.git
+cd discord-dio-clone
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Install the dependencies:
+```bash
+npm install
 ```
+
+3. Run the development environment (Build + Watch + Server):
+```bash
+npm run dev
+```
+
+4. (Optional) Generate minified build for production:
+```bash
+npm run build
+```
+
+<!--
+> **Note:** To update `vercel.json` with the latest asset hashes for deployment, run:
+```bash
+npm run hash:build
+``` -->
+
+## 📂 File Structure
+
+<!-- Below is the project architecture. All development should be done inside the `src/` folder. The `dist/` folder is automatically generated by Gulp and should not be edited manually.
+
+```text
+discord-dio-clone/
+├── design/             # Wireframes, videos and assets for documentation
+├── src/                # Main source code (Development)
+│   ├── assets/         # Original images and icons
+│   ├── css/            # Styles following architecture BEM and Atomic Design principles
+│   ├── js/             # UI logic and PWA registration
+│   ├── icons-preview.html   # Preview page for the custom icon font
+│   ├── index.html      # Base semantic structure and main markup
+│   ├── manifest.webmanifest # PWA installation settings (App Icon, Colors)
+│   ├── robots.txt      # Guidelines for search engine indexing (SEO)
+│   └── sw-template.js  # Service Worker Template (hashes injected by Gulp)
+├── dist/               # Production build (Generated by Gulp - DO NOT EDIT)
+├── gulpfile.js         # Automation pipeline (Minification and optimization tasks)
+└── package.json        # Project dependencies and npm scripts
+``` -->
+
+**Coming soon**
+
+## 🎨 Reference & Inspiration
+
+<!-- The project's design and wireframes are available for viewing on Figma. Below is a list of the real-world examples that inspired the UI/UX design.
+
+Figma / Wireframe: [Fitness Gym](https://www.figma.com/design/FodXub9KWw9YjUF2Zfl1GZ/discord-dio-clone?node-id=0-1&t=BbKVdxXdebEzU0Xh-1)
+
+### Inspiration
+
+* [SmartFit](https://www.smartfit.com.br/?gclid=Cj0KCQjwjt-oBhDKARIsABVRB0wsnAjS--OiIMrzNjklx9nR3w0rXAZM46lWLefnmjgkCP2UW0fC0EEaApkPEALw_wcB)
+* [Panobianco](https://www.panobiancoacademia.com.br/)
+* [Koatch](https://www.koatch.com/) -->
+
+**Coming soon**
+
+## 👨‍💻 Author and Contact
+
+<a href="https://github.com/Epiled">
+  <img src="https://user-images.githubusercontent.com/55258483/178338085-2cea8bf2-6d0c-409a-9d0e-23359b7d303e.png" alt="Felindo">
+  <br />
+  <sub><b>Felipe De Andrade</b></sub>
+</a>
+
+Made with ❤️ by Felipe De Andrade 👋🏽 Get in touch!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fademendonca/)
+[![CodePen](https://img.shields.io/badge/CodePen-000000?style=for-the-badge&logo=codepen&logoColor=white)](https://codepen.io/epiled)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:felipe.deam98@gmail.com)
