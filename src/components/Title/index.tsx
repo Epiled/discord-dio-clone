@@ -14,7 +14,7 @@ export const Title = (props: ITitle) => {
 
   return (
     <TitleStyled as={level} className={className} {...rest}>
-      {text || children}
+      {text ?? children}
     </TitleStyled>
   );
 };

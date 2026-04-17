@@ -11,7 +11,7 @@ export const Text = (props: IText) => {
 
   return (
     <TextStyled className={className} {...rest}>
-      {text || children}
+      {text ?? children}
     </TextStyled>
   );
 };
