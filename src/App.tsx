@@ -1,5 +1,6 @@
 import GlobalStyles from "./styles/GlobalStyles";
 
+import { Menu } from "./components/Menu";
 import { Header } from "./components/Header";
 import { Section } from "./components/Section";
 import { Title } from "./components/Title";
@@ -19,6 +20,7 @@ function App() {
     <>
       <GlobalStyles />
       <AppContainer>
+        <Menu />
         <Header />
         <Section>
           <>
