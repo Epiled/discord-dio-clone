@@ -1,7 +1,7 @@
 import GlobalStyles from "./styles/GlobalStyles";
 
 import { Menu } from "./components/Menu";
-import { Header } from "./components/Header";
+import { Banner } from "./components/Banner";
 import { Section } from "./components/Section";
 import { Title } from "./components/Title";
 import { Text } from "./components/Text";
@@ -21,7 +21,7 @@ function App() {
       <GlobalStyles />
       <AppContainer>
         <Menu />
-        <Header />
+        <Banner />
         <Section>
           <>
             <LoadImage src={Image_01} />
