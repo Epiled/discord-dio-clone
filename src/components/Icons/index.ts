@@ -10,7 +10,7 @@ export const createIcon = (SvgComponent: React.FunctionComponent<React.SVGProps<
   return styled(SvgComponent)<IIcon>`
       width: ${(props) => props.$size ?? "2.4rem"};
       height: ${(props) => props.$size ?? "2.4rem"};
-      color: ${(props) => props.$color ?? "var(--color-icon)"};
+      color: ${(props) => props.$color ?? "currentColor"};
       transform: rotate(${(props) => props.$rotate ?? 0}deg);
       aspect-ratio: 1 / 1;
       flex-shrink: 0;
