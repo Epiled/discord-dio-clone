@@ -1,6 +1,8 @@
 import { Button } from "../Button";
 import { DownloadIcon } from "../Icons/DownloadIcon";
 
+import { getDeviceOS } from "../../hooks/getDeviceOS";
+
 import {
   BannerBackground1,
   BannerBackground2,
@@ -19,6 +21,8 @@ import Background2 from "assets/svg/icons-art/background-2.svg";
 import Background3 from "assets/svg/icons-art/background-3.svg";
 
 export const Banner = () => {
+  const os = getDeviceOS();
+
   return (
     <BannerStyled>
       <BannerWrapper>
@@ -31,14 +35,21 @@ export const Banner = () => {
             todos os dias e socializar com mais frequência.
           </BannerText>
           <BannerButtons>
-            <Button
-              icon={<DownloadIcon aria-hidden="true" />}
-              text="Baixar para Windows"
-            />
-            <Button
-              appearance="inverse"
-              text="Abra o Discord no seu navegador"
-            />
+            {os === "Android" && (
+              <Button text="Baixar no Google Play" icon={<DownloadIcon />} />
+            )}
+            {os === "iOS" && (
+              <Button text="Baixar na App Store" icon={<DownloadIcon />} />
+            )}
+            {os === "Desktop/Other" && (
+              <>
+                <Button text="Baixar para Windows" icon={<DownloadIcon />} />
+                <Button
+                  appearance="inverse"
+                  text="Abra o Discord no seu navegador"
+                />
+              </>
+            )}
           </BannerButtons>
         </BannerContent>
       </BannerWrapper>
