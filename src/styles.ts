@@ -18,11 +18,14 @@ export const AppSection = styled(Section)`
       "content content"
       "image image";
     text-align: center;
+    padding-bottom: 8rem;
   }
 `
 
 export const AppTitle = styled(Title)`
-  font-size: 3.2rem;
+  font-size: 4rem;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 800;
   white-space: pre-line;
   text-transform: uppercase;
 

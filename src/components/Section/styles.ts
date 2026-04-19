@@ -6,20 +6,23 @@ export const SectionStyled = styled.section<{ type: "default" | "clear" }>`
     "image"
     "content";
   justify-content: center;
-  gap: 2.7rem;
-  padding: 4rem 2.4rem;
+  gap: 2rem;
+  padding: 5.6rem 2.4rem;
 
   @media screen and (min-width: 768px) {
     align-items: center;
-    gap: 1.6rem;
-    padding: 4rem;
+    padding: 8rem 4rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 12rem 4rem;
   }
 
   ${({ type }) => {
     switch(type) {
       case 'clear':
         return css`
-          background: rgba(246, 246, 246, 1);
+          background: var(--color-surface-active-menu);
 
           @media screen and (min-width: 768px) {
             grid-template-areas: 
@@ -31,7 +34,7 @@ export const SectionStyled = styled.section<{ type: "default" | "clear" }>`
       case 'default':
         default:
           return css`
-            background: rgba(255, 255, 255, 1);
+            background: var(--color-neutral-white);
 
             @media screen and (min-width: 768px) {
               grid-template-areas: 
