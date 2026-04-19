@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderStyled = styled.header`
+export const BannerStyled = styled.section`
   background: var(--color-surface-banner);
   background-size: 100%, cover;
   background-position: center;
@@ -17,7 +17,7 @@ export const HeaderStyled = styled.header`
   }
 `
 
-export const HeaderWrapper = styled.div`
+export const BannerWrapper = styled.div`
   display: grid;
   gap: 2rem;
   position: relative;
@@ -32,7 +32,7 @@ export const HeaderWrapper = styled.div`
   }
 `
 
-export const HeaderContent = styled.div`
+export const BannerContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -54,7 +54,7 @@ export const HeaderContent = styled.div`
   }
 `
 
-export const HeaderTitle = styled.h1`
+export const BannerTitle = styled.h1`
   color: var(--color-neutral-white);
   font-size: 4.4rem;
   font-size: clamp(2.4rem, 5vw, 4.4rem);
@@ -75,7 +75,7 @@ export const HeaderTitle = styled.h1`
   }
 `
 
-export const HeaderText = styled.p`
+export const BannerText = styled.p`
   color: var(--color-neutral-white);
   font-size: clamp(1.6rem, 2vw, 2rem);
   line-height: 1.625;
@@ -87,7 +87,7 @@ export const HeaderText = styled.p`
   }
 `
 
-export const HeaderButtons = styled.div`
+export const BannerButtons = styled.div`
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -103,14 +103,14 @@ export const HeaderButtons = styled.div`
   }
 `
 
-export const HeaderImages = styled.div`
+export const BannerImages = styled.div`
   @media screen and (min-width: 768px) {
     position: absolute;
     inset: 0;
   }
 `
 
-export const HeaderBackground1 = styled.img`
+export const BannerBackground1 = styled.img`
   display: none;
   position: absolute;
 
@@ -126,7 +126,7 @@ export const HeaderBackground1 = styled.img`
     margin-left: -1280px;
   }
 `
-export const HeaderBackground2 = styled.img`
+export const BannerBackground2 = styled.img`
   display: none;
   position: absolute;
 
@@ -145,7 +145,7 @@ export const HeaderBackground2 = styled.img`
     margin-left: 370px;
   }
 `
-export const HeaderBackground3 = styled.img`
+export const BannerBackground3 = styled.img`
   position: relative;
   bottom: 0;
   left: -8rem;
