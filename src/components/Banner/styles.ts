@@ -9,7 +9,7 @@ export const BannerStyled = styled.section`
   position: relative;
 
   @media screen and (min-width: 768px) {
-    padding: 9.4rem 4rem 8rem 4rem;
+    padding: 8rem 4rem 8rem 4rem;
   }
 
   @media screen and (min-width: 1024px) {
@@ -60,7 +60,7 @@ export const BannerTitle = styled.h1`
   font-size: clamp(2.4rem, 5vw, 4.4rem);
   font-weight: 800;
   font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  line-height: 100%;
+  line-height: 95%;
   text-align: left;
   text-transform: uppercase;
   text-rendering: geometricPrecision;
