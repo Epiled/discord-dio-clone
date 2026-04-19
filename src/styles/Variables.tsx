@@ -9,6 +9,7 @@ const Variables = createGlobalStyle`
     --color-text-link: #00b0f4;
 
     --color-surface-active-menu: #f6f6f6;
+    --color-surface-banner: #404eed;
     
     --color-button-inverse-hover: #36393f;
     --color-button-brand-hover: #7983f5;
