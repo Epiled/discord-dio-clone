@@ -5,6 +5,9 @@ export const ButtonStyled = styled.button<{
     $appearance?: Appearance, 
     $size?: Size 
   }>`
+  display: flex;
+  gap: .8rem;
+  justify-content: center;
   border-radius: 2.8rem;
   border: 0;
   outline: 0;

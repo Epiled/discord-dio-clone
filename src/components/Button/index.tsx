@@ -1,9 +1,11 @@
+import React from "react";
 import { ButtonStyled } from "./styles";
 
 export type Appearance = "default" | "inverse" | "brand";
 export type Size = "small" | "large";
 
 interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  icon?: React.ReactNode;
   text?: string;
   appearance?: Appearance;
   size?: Size;
@@ -12,6 +14,7 @@ interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button = (props: IButton) => {
   const {
+    icon,
     text,
     appearance = "default",
     size = "large",
@@ -26,6 +29,7 @@ export const Button = (props: IButton) => {
       className={className}
       {...rest}
     >
+      {icon && icon}
       {text ?? children}
     </ButtonStyled>
   );
