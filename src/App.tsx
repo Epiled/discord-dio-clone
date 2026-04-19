@@ -60,8 +60,8 @@ function App() {
             <LoadImage src={Image_04} />
             <ContentBox>
               <>
-                <AppTitle text={`Tecnologia de conexão \nconfiável`} />
-                <Text text="Organize qualquer comunidade com ferramentas de moderação e acesso personalizado a membros. Dê poderes especiais aos membros, monte canais privados e muito mais." />
+                <AppTitle text={`Tecnologia de conexão confiável`} />
+                <Text text="Voz e vídeo de baixa latência, para você conversar como se estivesse na mesma sala. Dê um joinha por vídeo, veja amigos transmitirem a jogatina do dia ou junte uma galera pra desenhar na tela compartilhada." />
               </>
             </ContentBox>
           </>
