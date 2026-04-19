@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
+import type { Appearance, Size } from ".";
 
-export const ButtonStyled = styled.button<{ $appearance?: "default" | "inverse", $size?: "small" | "large" }>`
+export const ButtonStyled = styled.button<{ 
+    $appearance?: Appearance, 
+    $size?: Size 
+  }>`
   border-radius: 2.8rem;
   border: 0;
   outline: 0;
@@ -25,6 +29,15 @@ export const ButtonStyled = styled.button<{ $appearance?: "default" | "inverse",
 
           &:hover {
             background: var(--color-button-inverse-hover);
+          }
+        `;
+      case 'brand':
+        return css`
+          background: var(--color-brand-primary);
+          color: var(--color-neutral-white);
+
+          &:hover {
+            background: var(--color-button-brand-hover);
           }
         `;
       case 'default':

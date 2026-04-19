@@ -1,11 +1,12 @@
 import { ButtonStyled } from "./styles";
 
-type Appearance = "default" | "inverse";
+export type Appearance = "default" | "inverse" | "brand";
+export type Size = "small" | "large";
 
 interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   text?: string;
   appearance?: Appearance;
-  size?: "small" | "large";
+  size?: Size;
   className?: string;
 }
 
