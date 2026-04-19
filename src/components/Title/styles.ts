@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
 export const TitleStyled = styled.h2`
-  grid-area: title;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 800;
-  font-size: 2.4rem;
-  line-height: 100%;
+  font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 120%;
   letter-spacing: 0;
-  color: rgba(35, 39, 42, 1);
+  color: var(--color-text-primary);
 
   @media screen and (min-width: 768px) {
-    font-size: 4rem;
+    grid-area: title;
+    font-size: 4.8rem;
   }
 `

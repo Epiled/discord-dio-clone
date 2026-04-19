@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const TextStyled = styled.p`
   grid-area: text;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  line-height: 100%;
+  font-family: "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: var(--color-text-primary);
+  font-size: 2rem;
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  font-weight: 300;
+  line-height: 1.625;
   letter-spacing: 0;
-  color: rgba(35, 39, 42, 1);
 `
