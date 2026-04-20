@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Section } from "./components/Section";
 import { Title } from "./components/Title";
 
-export const AppContainer = styled.div`
+export const AppContainer = styled.main`
   display: flex;
   flex-direction: column;
 `
