@@ -16,12 +16,12 @@ export const createIcon = (SvgComponent: React.FunctionComponent<React.SVGProps<
       flex-shrink: 0;
 
       &:where([data-show="mobile-only"]) {
-        display: none;
+        display: flex;
       }
 
-      @media screen and (max-width: 1024px) {
+      @media screen and (min-width: 1024px) {
         &:where([data-show="mobile-only"]) {
-          display: flex;
+          display: none;
         }
       }
     `;

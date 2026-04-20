@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Section } from "./components/Section";
 import { Title } from "./components/Title";
 
-export const AppContainer = styled.div`
+export const AppContainer = styled.main`
   display: flex;
   flex-direction: column;
 `
@@ -14,9 +14,6 @@ export const AppSection = styled(Section)`
     "image";
 
   @media screen and (min-width: 768px) {
-    grid-template-areas: 
-      "content content"
-      "image image";
     text-align: center;
     padding-bottom: 8rem;
   }
