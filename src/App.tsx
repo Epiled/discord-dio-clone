@@ -25,7 +25,7 @@ function App() {
         <Banner />
         <Section>
           <>
-            <LoadImage src={Image_01} />
+            <LoadImage src={Image_01} width="678" height="440" alt="" />
             <ContentBox>
               <>
                 <Title text="Crie um espaço controlado por convite onde você se sinta em casa" />
@@ -36,7 +36,7 @@ function App() {
         </Section>
         <Section type="clear">
           <>
-            <LoadImage src={Image_02} />
+            <LoadImage src={Image_02} width="678" height="440" alt="" />
             <ContentBox>
               <>
                 <Title text="Aqui é fácil se encontrar" />
@@ -47,7 +47,7 @@ function App() {
         </Section>
         <Section>
           <>
-            <LoadImage src={Image_03} />
+            <LoadImage src={Image_03} width="678" height="440" alt="" />
             <ContentBox>
               <>
                 <Title text="Para poucos e para muitos" />
@@ -58,7 +58,7 @@ function App() {
         </Section>
         <AppSection type="clear">
           <>
-            <LoadImage src={Image_04} />
+            <LoadImage src={Image_04} width="874" height="530" alt="" />
             <ContentBox>
               <>
                 <AppTitle text={`Tecnologia de conexão confiável`} />
