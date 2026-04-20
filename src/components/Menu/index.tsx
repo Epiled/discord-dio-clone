@@ -20,7 +20,7 @@ import { ChevronIcon } from "../Icons/ChevronIcon";
 
 export const Menu = () => {
   const [activeMenu, setActiveMenu] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
   const toggleMenu = () => {
     setActiveMenu((prev) => !prev);
@@ -49,7 +49,9 @@ export const Menu = () => {
   return (
     <MenuStyled>
       {activeMenu && isMobile && <MenuOverlay onClick={toggleMenu} />}
-      <Logo />
+      <MenuLink padding="0">
+        <Logo />
+      </MenuLink>
 
       <MenuList $active={activeMenu}>
         <MenuListInner>
