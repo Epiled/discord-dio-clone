@@ -21,7 +21,7 @@ export const SectionStyled = styled.section<{ type: "default" | "clear" }>`
 `
 
 export const SectionWrapper = styled.div<{ 
-  type: "default" | "clear", variation: "default" | "reverse" | "column" }>`
+  type: "default" | "clear", $variation: "default" | "reverse" | "column" }>`
   display: grid;
   grid-template-areas: 
     "image"
