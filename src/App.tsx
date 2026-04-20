@@ -8,6 +8,7 @@ import { Text } from "./components/Text";
 import { Footer } from "./components/Footer";
 import { LoadImage } from "./components/LoadImage";
 import { ContentBox } from "./components/ContentBox";
+import { CallToAction } from "./components/CallToAction";
 
 import Image_01 from "assets/img/image_01.png";
 import Image_02 from "assets/img/image_02.png";
@@ -66,6 +67,7 @@ function App() {
             </ContentBox>
           </>
         </AppSection>
+        <CallToAction />
       </AppContainer>
       <Footer />
     </>
