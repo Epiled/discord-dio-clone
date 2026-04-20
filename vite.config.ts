@@ -13,8 +13,6 @@ export default defineConfig({
   plugins: [react(), svgr(), UnpluginInjectPreload({
     files: [
         {
-          // 'outputMatch' é o nome correto para arquivos no diretório de saída (dist)
-          // Usamos .* no início para ignorar o caminho 'assets/' e (-.*)? para o hash opcional
           outputMatch: /background-[1-3](-.*)?\.svg$/,
           attributes: {
             fetchpriority: 'high',
