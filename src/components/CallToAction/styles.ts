@@ -20,6 +20,10 @@ export const CallToActionStyled = styled.section`
     align-items: center;
     padding: 3rem 4rem 8rem 4rem;
   }
+
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 12rem;
+  }
 `;
 
 export const CallToActionTitle = styled.h2`
