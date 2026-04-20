@@ -68,8 +68,8 @@ function App() {
           </>
         </AppSection>
         <CallToAction />
+        <Footer />
       </AppContainer>
-      <Footer />
     </>
   );
 }
