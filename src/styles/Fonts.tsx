@@ -10,6 +10,7 @@ import WhitneySemiBold from "../assets/fonts/Whitney/Whitney-SemiBold.otf";
 import WhitneySemiBoldItalic from "../assets/fonts/Whitney/Whitney-SemiBold-Italic.otf";
 import WhitneyBold from "../assets/fonts/Whitney/Whitney-Bold.otf";
 
+import GintoNordRegular from "../assets/fonts/Ginto-Nord/Ginto-Nord-Regular.woff2";
 import GintoNordBold from "../assets/fonts/Ginto-Nord/Ginto-Nord-Bold.woff2";
 import GintoNordBlack from "../assets/fonts/Ginto-Nord/Ginto-Nord-Black.woff2";
 
@@ -87,6 +88,14 @@ const Fonts: React.FC = createGlobalStyle`
     src: url(${WhitneyBold}) format('opentype');
     font-display: swap;
   }
+
+  @font-face {
+    font-family: 'Ginto Nord';
+    font-weight: 400;
+    src: url(${GintoNordRegular}) format('woff2');
+    font-display: swap;
+  }
+
 
   @font-face {
     font-family: 'Ginto Nord';
