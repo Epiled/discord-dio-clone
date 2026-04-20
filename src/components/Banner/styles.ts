@@ -13,6 +13,8 @@ export const BannerStyled = styled.section`
   }
 
   @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
     padding: 20rem 4rem 12rem 4rem;
   }
 `
@@ -29,6 +31,8 @@ export const BannerWrapper = styled.div`
 
   @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(12, 1fr);
+    padding: 0rem 4rem;
+    max-width: 126rem;
   }
 `
 
