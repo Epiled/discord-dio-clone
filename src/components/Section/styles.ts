@@ -38,8 +38,8 @@ export const SectionWrapper = styled.div<{
     padding: 0 4rem;
   }
 
-  ${({ variation }) => {
-    switch(variation) {
+  ${({ $variation }) => {
+    switch($variation) {
       case 'column':
         return css`
           grid-template-areas: 
