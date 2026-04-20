@@ -30,6 +30,6 @@ export const CallToActionTitle = styled.h2`
   color: var(--color-neutral-black);
   font-weight: 600;
   font-size: 3.2rem;
-  line-height: 120%;
   font-family: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica","Arial", sans-serif;
-`
+  line-height: 120%;
+  `
