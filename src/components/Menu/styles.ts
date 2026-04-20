@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../Button";
+import { CloseIcon } from "../Icons/CloseIcon";
 
 export const MenuStyled = styled.nav`
   display: flex;
@@ -38,6 +39,7 @@ export const MenuList = styled.div<{$active: boolean}>`
   transition-property: right;
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
+  z-index: 4;
   
   @media screen and (min-width: 1024px) {
     position: static;
@@ -86,16 +88,20 @@ export const MenuButtonClose = styled(Button)`
   z-index: 3;
   pointer-events: auto;
   cursor: pointer;
+
+  &:hover {
+    box-shadow: none;
+  }
 `
 
-export const MenuLink = styled.a<{ padding?: string }>`
+export const MenuLink = styled.a<{ $padding?: string }>`
   display: flex;
   color: var(--color-text-primary);
   font-weight: 300;
   font-size: 1.6rem;
   font-family: "Whitney", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 2.4rem;
-  padding: ${props => props.padding ?? ".8rem 1.6rem"};
+  padding: ${props => props.$padding ?? ".8rem 1.6rem"};
 
   &:hover {
     text-decoration: underline;
@@ -111,7 +117,7 @@ export const MenuLink = styled.a<{ padding?: string }>`
   @media screen and (min-width: 1024px) {
     color: var(--color-neutral-white);
     gap: 2rem;
-    padding: ${props => props.padding ?? "1rem"};
+    padding: ${props => props.$padding ?? "1rem"};
     font-weight: 600;
 
     &:where([data-show="mobile-only"]) {
@@ -151,6 +157,10 @@ export const MenuButtonToggle = styled(Button)`
   @media screen and (min-width: 1024px) {
     display: none;
   }
+`
+
+export const MenuCloseIcon = styled(CloseIcon)`
+  color: var(--color-icon);
 `
 
 export const MenuButtons = styled.div`

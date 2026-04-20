@@ -10,6 +10,7 @@ import {
   FooterBottom,
   FooterColumn,
   FooterHeader,
+  FooterItem,
   FooterList,
   FooterMain,
   FooterNav,
@@ -51,45 +52,87 @@ export const Footer = () => {
           <FooterColumn>
             <FooterSubtitle>Produto</FooterSubtitle>
             <FooterList>
-              <FootLink>Baixar</FootLink>
-              <FootLink>Nitro</FootLink>
-              <FootLink>Status</FootLink>
+              <FooterItem>
+                <FootLink>Baixar</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Nitro</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Status</FootLink>
+              </FooterItem>
             </FooterList>
           </FooterColumn>
 
           <FooterColumn>
             <FooterSubtitle>Empresa</FooterSubtitle>
             <FooterList>
-              <FootLink>Sobre</FootLink>
-              <FootLink>Empregos</FootLink>
-              <FootLink>Marca</FootLink>
-              <FootLink>Sala de imprensa</FootLink>
+              <FooterItem>
+                <FootLink>Sobre</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Empregos</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Marca</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Sala de imprensa</FootLink>
+              </FooterItem>
             </FooterList>
           </FooterColumn>
 
           <FooterColumn>
             <FooterSubtitle>Recursos</FooterSubtitle>
             <FooterList>
-              <FootLink>Faculdade</FootLink>
-              <FootLink>Suporte</FootLink>
-              <FootLink>Segurança</FootLink>
-              <FootLink>Blog</FootLink>
-              <FootLink>Comentários</FootLink>
-              <FootLink>Desenvolvedores</FootLink>
-              <FootLink>StreamKit</FootLink>
+              <FooterItem>
+                <FootLink>Faculdade</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Suporte</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Segurança</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Blog</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Comentários</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Desenvolvedores</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>StreamKit</FootLink>
+              </FooterItem>
             </FooterList>
           </FooterColumn>
 
           <FooterColumn>
             <FooterSubtitle>Política</FooterSubtitle>
             <FooterList>
-              <FootLink>Termos</FootLink>
-              <FootLink>Privacidade</FootLink>
-              <FootLink>Configurações de cookies</FootLink>
-              <FootLink>Diretrizes</FootLink>
-              <FootLink>Reconhecimentos</FootLink>
-              <FootLink>Licenças</FootLink>
-              <FootLink>Moderação</FootLink>
+              <FooterItem>
+                <FootLink>Termos</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Privacidade</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Configurações de cookies</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Diretrizes</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Reconhecimentos</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Licenças</FootLink>
+              </FooterItem>
+              <FooterItem>
+                <FootLink>Moderação</FootLink>
+              </FooterItem>
             </FooterList>
           </FooterColumn>
         </FooterNav>

@@ -117,6 +117,8 @@ export const FooterList = styled.ul`
   gap: .8rem;
 `
 
+export const FooterItem = styled.li``
+
 export const FootLink = styled(FooterSubtitle).attrs({ as: "a" })`
   display: flex;
   align-items: center;

@@ -18,7 +18,7 @@ export const Section = (props: ISection) => {
 
   return (
     <SectionStyled type={type} className={className} {...rest}>
-      <SectionWrapper type={type} variation={variation}>
+      <SectionWrapper type={type} $variation={variation}>
         {children}
       </SectionWrapper>
     </SectionStyled>

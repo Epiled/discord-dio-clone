@@ -6,6 +6,7 @@ import {
   MenuButtonDownload,
   MenuButtons,
   MenuButtonToggle,
+  MenuCloseIcon,
   MenuLink,
   MenuList,
   MenuListInner,
@@ -15,7 +16,6 @@ import {
 } from "./styles";
 import { MenuIcon } from "../Icons/MenuIcon";
 import { DownloadIcon } from "../Icons/DownloadIcon";
-import { CloseIcon } from "../Icons/CloseIcon";
 import { ChevronIcon } from "../Icons/ChevronIcon";
 
 export const Menu = () => {
@@ -49,16 +49,20 @@ export const Menu = () => {
   return (
     <MenuStyled>
       {activeMenu && isMobile && <MenuOverlay onClick={toggleMenu} />}
-      <MenuLink padding="0">
+      <MenuLink $padding="0">
         <Logo />
       </MenuLink>
 
       <MenuList $active={activeMenu}>
         <MenuListInner>
           <MenuMobileHeader>
-            <Logo variation="reverse" />
+            <MenuLink $padding="0">
+              <Logo variation="reverse" />
+            </MenuLink>
+
             <MenuButtonClose
-              icon={<CloseIcon aria-hidden="true" />}
+              icon={<MenuCloseIcon aria-hidden="true" />}
+              aria-label={"Fechar menu de navegação"}
               onClick={toggleMenu}
             />
           </MenuMobileHeader>
@@ -106,6 +110,7 @@ export const Menu = () => {
               aria-hidden="true"
             />
           }
+          aria-label={"Abrir menu de navegação"}
           size="small"
           onClick={toggleMenu}
         />
