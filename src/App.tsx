@@ -34,7 +34,7 @@ function App() {
             </ContentBox>
           </>
         </Section>
-        <Section type="clear">
+        <Section type="clear" variation="reverse">
           <>
             <LoadImage src={Image_02} width="678" height="440" alt="" />
             <ContentBox>
@@ -56,7 +56,7 @@ function App() {
             </ContentBox>
           </>
         </Section>
-        <AppSection type="clear">
+        <AppSection type="clear" variation="column">
           <>
             <LoadImage src={Image_04} width="874" height="530" alt="" />
             <ContentBox>

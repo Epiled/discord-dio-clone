@@ -14,9 +14,6 @@ export const AppSection = styled(Section)`
     "image";
 
   @media screen and (min-width: 768px) {
-    grid-template-areas: 
-      "content content"
-      "image image";
     text-align: center;
     padding-bottom: 8rem;
   }
