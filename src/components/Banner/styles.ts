@@ -154,6 +154,7 @@ export const BannerBackground3 = styled.img`
   bottom: 0;
   left: -8rem;
   width: 100%;
+  height: auto;
 
   @media screen and (min-width: 768px) {
     display: none;
