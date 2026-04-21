@@ -54,9 +54,28 @@ export const Banner = () => {
         </BannerContent>
       </BannerWrapper>
       <BannerImages>
-        <BannerBackground3 src={Background3} width="655" height="335" alt="" />
-        <BannerBackground2 src={Background2} width="615" height="360" alt="" />
-        <BannerBackground1 src={Background1} width="2560" height="626" alt="" />
+        <BannerBackground3
+          src={Background3}
+          width="655"
+          height="335"
+          fetchPriority="high"
+          alt=""
+        />
+        <BannerBackground2
+          src={Background2}
+          width="615"
+          height="360"
+          fetchPriority="high"
+          alt=""
+        />
+
+        <BannerBackground1
+          src={Background1}
+          width="2560"
+          height="626"
+          fetchPriority="high"
+          alt=""
+        />
       </BannerImages>
     </BannerStyled>
   );

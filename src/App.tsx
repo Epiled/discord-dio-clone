@@ -10,10 +10,11 @@ import { LoadImage } from "./components/LoadImage";
 import { ContentBox } from "./components/ContentBox";
 import { CallToAction } from "./components/CallToAction";
 
-import Image_01 from "assets/img/image_01.png";
-import Image_02 from "assets/img/image_02.png";
-import Image_03 from "assets/img/image_03.png";
-import Image_04 from "assets/img/image_04.png";
+import Image_01 from "assets/img/image_01.png?format=webp";
+import Image_02 from "assets/img/image_02.png?format=webp";
+import Image_03 from "assets/img/image_03.png?format=webp";
+import Image_04 from "assets/img/image_04.png?format=webp";
+
 import { AppContainer, AppSection, AppTitle } from "./styles";
 
 function App() {
@@ -25,7 +26,13 @@ function App() {
         <Banner />
         <Section>
           <>
-            <LoadImage src={Image_01} width="678" height="440" alt="" />
+            <LoadImage
+              src={Image_01}
+              width="678"
+              height="440"
+              fetchPriority="high"
+              alt=""
+            />
             <ContentBox>
               <>
                 <Title text="Crie um espaço controlado por convite onde você se sinta em casa" />
@@ -36,7 +43,13 @@ function App() {
         </Section>
         <Section type="clear" variation="reverse">
           <>
-            <LoadImage src={Image_02} width="678" height="440" alt="" />
+            <LoadImage
+              src={Image_02}
+              width="678"
+              height="440"
+              loading="lazy"
+              alt=""
+            />
             <ContentBox>
               <>
                 <Title text="Aqui é fácil se encontrar" />
@@ -47,7 +60,13 @@ function App() {
         </Section>
         <Section>
           <>
-            <LoadImage src={Image_03} width="678" height="440" alt="" />
+            <LoadImage
+              src={Image_03}
+              width="678"
+              height="440"
+              loading="lazy"
+              alt=""
+            />
             <ContentBox>
               <>
                 <Title text="Para poucos e para muitos" />
@@ -58,7 +77,13 @@ function App() {
         </Section>
         <AppSection type="clear" variation="column">
           <>
-            <LoadImage src={Image_04} width="874" height="530" alt="" />
+            <LoadImage
+              src={Image_04}
+              width="874"
+              height="530"
+              loading="lazy"
+              alt=""
+            />
             <ContentBox>
               <>
                 <AppTitle text={`Tecnologia de conexão confiável`} />
