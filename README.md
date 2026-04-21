@@ -59,13 +59,13 @@ Access the live application below to interact with the interface and run your ow
 
 Discord Clone: [https://discord-clone-iota-jet.vercel.app/](https://discord-clone-iota-jet.vercel.app/)
 
-#### Desktop
+### Desktop
 
+https://github.com/user-attachments/assets/65882c29-1071-4e52-b880-9fb9933c7b4b
 
+### Mobile
 
-#### Mobile
-
-
+https://github.com/user-attachments/assets/e0affe1c-eb78-465f-9f10-044846561b46
 
 ## 📦 Install and Use
 
